@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Add cache_id to each asset link -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='your_css_file.css') }}?v={{ cache_id }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='your_another_css_file.css') }}?v={{ cache_id }}">
+    <!-- Add cache_id to other asset links -->
+</head>
+<body>
+    <!-- Your HTML content -->
+</body>
+</html>
